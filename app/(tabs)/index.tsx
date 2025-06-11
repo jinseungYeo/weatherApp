@@ -47,7 +47,7 @@ export default function App() {
     setLoadingWeather(true);
     let { status } = await Location.requestForegroundPermissionsAsync();
     if (status !== 'granted') {
-      alert('위치 권한이 필요합니다.');
+      alert('위치 권한이 필요합니다!!!.');
       setLoadingWeather(false);
       return;
     }
